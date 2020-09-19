@@ -35,11 +35,13 @@ ul{
 
 .flex-container-row > div {
 	width: 40vh;
+	min-width:300px;
 	align-self:center;
 }
 
 .flex-container-row img {
 	max-width: 100%;
+	min-width:200px;
 }
 
 .flex-container-col {
@@ -48,6 +50,7 @@ ul{
 }
 
 .flex-container-col > div {
+	min-width:300px;
 	text-align: left;
 	font-size: 50px;
 }
@@ -140,7 +143,7 @@ ul{
 .flex-container-col-proj {
 	display: flex;
 	flex-direction: column;
-	margin-top: 10vh;
+	margin-top: 4vh;
 }
 
 .flex-container-col-proj > div {
