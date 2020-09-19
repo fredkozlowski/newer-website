@@ -2,15 +2,16 @@
 
 body{
 	font-family: 'Catamaran', sans-serif;
-	border: 1px solid orange;
+	border: 1px solid;
+	border-color: #8cc6ff;
 	border-radius: 25px;
-	margin: 20px 50px 20px 50px;
+	margin: 2vw 5vh 2vw 5vh;
 }
 h2{
-	font-size: 1.3vw;
+	font-size: 20px;
 }
 h1{
-	font-size: 2vw;
+	font-size: 30px;
 }
 
 img{
@@ -22,42 +23,43 @@ ul{
 	flex-flow: column;
 	margin-left: 7vw;
 	list-style: none;
-	font-size: 1.3vw;
+	font-size: 20px;
 }
 
 .flex-container-row {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .flex-container-row > div {
 	width: 40vh;
+	align-self:center;
 }
 
 .flex-container-row img {
 	max-width: 100%;
-	margin-top: 10vh;
 }
 
 .flex-container-col {
 	display: flex;
 	flex-direction: column;
-	margin-top: 21vh;
 }
 
 .flex-container-col > div {
 	text-align: left;
-	font-size: 4vw;
+	font-size: 50px;
 }
 
 .flex-container-navbar {
-	background-color: #ffb770;
+	background-color: #8cc6ff;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-grow: 1;
 	align-items:center;
+	flex-wrap: wrap;
 }
 
 .flex-container-navbar div a {
@@ -66,7 +68,7 @@ ul{
 	margin-top: 1vh;
 	margin-bottom: 1vh;
 	padding:0.5vw;
-	font-size: 1.3vw;
+	font-size: 20px;
 	border-radius: 1vh;
 	background-color: #f1f1f1;
 	text-align: center;
@@ -74,7 +76,7 @@ ul{
 	align-content: center;
 	text-decoration: none;
 	display:block;
-    width:7vw;
+    width:100px;
     height:100%;
     color:black;
 }
@@ -82,8 +84,6 @@ ul{
 .flex-container-navbar a:hover {
 	background-color: white;
 }
-
-
 
 .flex-container-txt {
 	display: flex;
@@ -95,19 +95,37 @@ ul{
 	width:75vw; 
 }
 
-.flex-container-row-proj {
+.flex-container-row-proj-left {
+	flex-wrap: wrap-reverse;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
-.flex-container-row-proj > div {
-	width: 30vw;
-	margin-left: 8vw;
-	margin-right: 8vw;
+.flex-container-row-proj-right {
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
-.flex-container-row-proj img {
+.flex-container-row-proj-left > div {
+	width: 300px;
+	margin-left: 3vw;
+	margin-right: 3vw;
+}
+
+.flex-container-row-proj-left img {
+	max-width: 100%;
+}
+
+.flex-container-row-proj-right > div {
+	width: 300px;
+	margin-left: 3vw;
+	margin-right: 3vw;
+}
+
+.flex-container-row-proj-right img {
 	max-width: 100%;
 }
 
@@ -119,5 +137,5 @@ ul{
 
 .flex-container-col-proj > div {
 	text-align: left;
-	font-size: 1.3vw;
+	font-size: 20px;
 }
